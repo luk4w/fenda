@@ -1,0 +1,15 @@
+[package]
+name = "models"
+version.workspace = true
+edition.workspace = true
+description = "embedding and reranker models run in-process (ONNX Runtime)"
+
+[dependencies]
+fnd.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+ort.workspace = true
+tokenizers.workspace = true
+
+[features]
+gpu = ["ort/directml"]
