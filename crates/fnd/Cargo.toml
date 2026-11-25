@@ -1,0 +1,11 @@
+[package]
+name = "fnd"
+version.workspace = true
+edition.workspace = true
+description = "the .fnd package: blocks, tree, edits, vectors, edges, project memory and vector search"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+regex.workspace = true
+rusqlite.workspace = true
